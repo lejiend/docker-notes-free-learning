@@ -1,0 +1,18 @@
+services: 
+  mysql:
+    image: mysql:8.4
+    container_name: mysql
+    restart: unless-stopped
+    environment: 
+      MYSQL_ROOT_PASSWORD: eu65DfoK+J/KFgNLY85xZKTNOjPhTb1LD4hTYoA7KUc=
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: qrSAiXZuJQv6Pob6S4BWRnay9sPbRMflMC1zcOTJacc=
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data_free_learning:/var/lib/mysql
+
+volumes:
+  mysql_data_free_learning:
+    driver: local
