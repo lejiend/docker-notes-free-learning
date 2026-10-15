@@ -1,0 +1,15 @@
+{
+  "name": "docker-workshop-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple notes app for a beginner Docker workshop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0"
+  }
+}
